@@ -3,7 +3,7 @@ import { buyIceCream } from "../redux/actions/iceCream/iceCreamActions";
 import { useSelector, useDispatch } from "react-redux";
 
 const HooksIceCreamContainer = () => {
-  const IceCreamSelector = useSelector((state) => state.numOfIceCream);
+  const IceCreamSelector = useSelector((state) => state.iceCream.numOfIceCream);
   const IceCreamDispatch = useDispatch();
   return (
     <div>
